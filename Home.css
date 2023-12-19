@@ -31,6 +31,8 @@
   }
   .developed a:hover{
     color: #FC6916;
-
+  }
+  .nav{
+    position: sticky;
   }
   
