@@ -1,4 +1,4 @@
-# [Microlion Computers](https://vigneshvaranasi.github.io/Microlion/Home) 🖥️💻
+# Microlion Computers 🖥️💻
 
 Visit the [Microlion Computers](https://vigneshvaranasi.github.io/Microlion/Home) website to explore our services!
 
@@ -33,7 +33,3 @@ Our project is fully responsive, ensuring a seamless experience across all devic
 ## License 📜
 
 This project is licensed under the terms of the MIT license.
-
-## Acknowledgments 🙌
-
-We appreciate the support of our users and the contributions from the open-source community.
