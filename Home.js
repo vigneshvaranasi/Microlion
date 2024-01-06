@@ -37,3 +37,20 @@ function smoothScrolls(target) {
         window.requestAnimationFrame(step);
     }
 }
+/* Contact Us Google Sheet Start */
+function submitForm() {
+    var form = document.getElementById("myForm");
+    var formData = new FormData(form);
+    
+    fetch('https://script.google.com/macros/s/AKfycbwrJ7FqVZTVdAKPE_0dwJMUiluX3ynd8vAem6rnZ2wVSIWC0O42rk1lLceMKASmw84Xnw/exec', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => {
+        console.log('Success:', response);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
+/* Contact Us Google Sheet End */

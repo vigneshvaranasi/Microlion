@@ -16,7 +16,7 @@
 <header class="nav fixed top-0 z-50 w-full bg-white border-b border-gray-200 text-sm py-3 sm:py-0 dark:bg-gray-800 dark:border-gray-700">
     <nav class="relative max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
         <div class="flex items-center justify-between">
-            <a class="flex-none text-xl font-semibold dark:text-white" href="#" aria-label="Brand"><img src="img/Microlion Logo.svg" class="w-56 h-30"  alt="Microlion Logo"></a>
+            <a class="flex-none text-xl font-semibold dark:text-white" href="#" aria-label="Brand"><img src="img/Microlion.svg" class="w-52 h-30"  alt="Microlion Logo"></a>
             <div class="sm:hidden">
                 <button type="button"
                     class="hs-collapse-toggle w-9 h-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
@@ -44,7 +44,7 @@
                 <a class="font-medium text-Black-500 hover:text-blue-600 sm:py-6 dark:text-Black-400 dark:hover:text-blue-600"
                     href="#about" onclick="smoothScrolls('#about')">About Us</a>
                 <a class="font-medium text-Black-500 hover:text-blue-600 sm:py-6 dark:text-Black-400 dark:hover:text-blue-600"
-                    href="https://vigneshvaranasi.github.io/Maintenance-for-website/Update">Contact</a>
+                    href="#contact" onclick="smoothScrolls('#contact')">Contact Us</a>
             </div>
         </div>
     </nav>
@@ -289,7 +289,6 @@
 </article>
 <!-- Services End -->
 
-
 <!-- Abt us Start -->
 <article id="about">
 <section id="about" class="py-16">
@@ -321,6 +320,7 @@
 <!-- Abt us End -->
 
 <!-- Team Details Start-->
+<article id="team">
 <div class="bg-white py-24 sm:py-32">
     <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
         <div class="max-w-2xl">
@@ -394,14 +394,41 @@
         </ul>
     </div>
 </div>
+</article>
 <!-- Team Details End-->
+
+<!-- Contact Us Start -->
+<article id="contact">
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 lg:py-6 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font font-bold text-center text-gray-900 dark:text-white">Contact Us</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Let us know.</p>
+            <form id="myForm" class="space-y-4">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                    <input type="email" name="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                    <input type="text" name="subject" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                    <textarea name="message" id="message" rows="3" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type="reset" onclick="submitForm()" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-500 w-full sm:w-auto hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+            </form>            
+        </div>
+    </section>
+</article>
+<!-- Contact Us End -->
 
 <!-- Footer Start -->
 <footer class="bg-white dark:bg-Black-900">
     <div class="container flex flex-col items-center justify-between px-6 py-8 mx-auto lg:flex-row">
         <div>
             <a href="#">
-                <img class="w-auto h-11" src="img/Microlion Logo Figma.svg" alt="Microlion Logo">
+                <img class="w-auto h-7" src="img/Microlion.svg" alt="Microlion Logo">
                 <!-- Microlion Computers -->
             </a>
 
